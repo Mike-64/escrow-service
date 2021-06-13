@@ -22,12 +22,7 @@ function App() {
       await window.ethereum.enable();
 
       setWeb3(web3);
-
-      // const accounts = await web3.eth.getAccounts();
-      // accounts.shift();
-      // setAgentAccounts(accounts);
-      // console.log(accounts);
-
+      
       const escrowContractInstance = new web3.eth.Contract(
         abi,
         config.escrowContractAddress
